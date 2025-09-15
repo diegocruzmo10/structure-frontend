@@ -13,7 +13,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path='login' element={<Login />} />
-          <Route path='dashboard' element={<Dashboard />} />
+          <Route index element={<Dashboard />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Suspense>
